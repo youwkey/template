@@ -1,0 +1,23 @@
+builds:
+  - skip: true
+
+release:
+  draft: true
+
+changelog:
+  sort: asc
+  use: github
+  groups:
+    - title: Features
+      regexp: "^.*feat:.*$"
+      order: 0
+    - title: Bug Fixes
+      regexp: "^.*fix:.*$"
+      order: 0
+    - title: Others
+      order: 999
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+      - Merge pull request
