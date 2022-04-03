@@ -1,1 +1,3 @@
 # README
+
++ `go mod init ...`
